@@ -1,0 +1,493 @@
+@charset "UTF-8";
+
+/*all*/
+body {
+    background-color: rgb(51,51,51);
+    background: linear-gradient(90deg, rgba(51,51,51,1) 0%, rgba(68,68,68,1) 50%, rgba(51,51,51,1) 100%);
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    text-size-adjust: 100%;
+}
+/*menu*/
+#menu ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  position: relative;
+  text-align: center;
+  top: -360px;
+}
+#menu {
+  font-size: 12pt;
+}
+#menu ul li {
+  display: inline;
+}
+#menu ul li a {
+  padding: 2px 10px;
+  display: inline-block;
+  color:  white;
+}
+#menu ul li a:hover {
+  color: #6D6D6D;
+  background-color: rgb(216, 216, 216);
+  border-radius: 10px;
+}
+/*barra menu*/
+#barra_do_menu {
+  text-align: center;
+  background: rgb(51,51,51);
+  background: linear-gradient(90deg, rgba(51,51,51,1) 0%, rgba(68,68,68,1) 50%, rgba(51,51,51,1) 100%);
+  position: relative;
+  height: 420px;
+  width: 100%;
+  top: -10px;
+  color: rgb(255, 255, 255);
+  font-size: 26px;
+  font-family: 'Fredoka One', cursive;
+  text-shadow: 4px 4px rgb(0, 0, 0)
+}
+#barra_do_menu img {
+  position: relative;
+  left: 920px;
+  top: -80px;
+  height: 120px;
+}
+#barra_do_menu #icone_virus{
+    position: relative;
+    top: -120px;
+    right: 1880px;
+}
+/*titulo principal*/
+#titulodestaque {
+    text-align: center;
+    font-size: 23pt;
+    position: relative;
+    top: -385px;
+    color: white;
+    font-family: 'Fredoka One', cursive;
+    font-family: 'Luckiest Guy', cursive;
+    text-shadow:  3px 3px black;
+}
+/*form*/
+#form {
+    text-align: center;
+    color: white;
+    font-size: 15pt;
+    width: 50%;
+    position:fixed;
+    left: 24.3%;
+    border-radius: 10px;
+    font-family: 'Roboto Slab', serif;
+    padding: 10px;
+    top: 155px;
+}
+/*form name*/
+#form #name {
+    text-align: center;
+    width: 40%;
+    height: 35px;
+    font-size: 15pt;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background-color: #2196F3;
+    color: white;
+}
+::-webkit-input-placeholder {
+  color: white;
+}
+/*form cpf*/
+#form #cpf {
+    text-align: center;
+    width: 40%;
+    height: 35px;
+    font-size: 15pt;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: #2196F3;
+    color: white;
+}
+/* titulo genero */
+#genero {
+  font-size: 20pt;
+  top: 100px;
+  left: 500px;
+  position: relative;
+}
+/* titulo feminino */
+#feminino {
+  font-size: 20pt;
+  top: 101px;
+  left: 526px;
+  position: relative;
+}
+/* titulo masculino */
+#masculino {
+  font-size: 20pt;
+  top: 58px;
+  left: 715px;
+  position: relative;
+}
+/*form genoro all*/
+#form #genero_all {
+  position: relative;
+  top: -92px;
+  left: -580px;
+}
+/*form estados*/
+#form #estados {
+  position: relative;
+  top: -115px;
+  left: 627px;
+}
+/*form cidades*/
+#form #cidades {
+  position: relative;
+  top: -157px;
+  left: 1035px;
+}
+/*form vacina*/
+#form #vacina {
+  position: relative;
+  top: -155px;
+  left: 1035px;
+}
+/*form evolucao*/
+#form #evolucao {
+  position: relative;
+  top: -146px;
+  left: 830px;
+  
+}
+/*form transmicao*/
+#form #transmicao {
+  position: relative;
+  top: -90px;
+  left: 677px;
+}
+/*form data nasc txt*/
+#form #data_nasc_txt {
+  position: relative;
+  top: 27px;
+  left: 0;
+  font-size: 20pt;
+}
+/*form data nasc*/
+#form #data_nasc {
+  font-size: 12pt;
+  position: relative;
+  top: 26px;
+  left: 0;
+}
+/*form telefone*/
+#form #telefone {
+  text-align: center;
+  width: 50%;
+  height: 35px;
+  font-size: 15pt;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  top: 20px;
+  position: relative;
+  background-color: #2196F3;
+
+}
+/*form data notificaçao txt*/
+#form #data_noti_txt {
+  position: relative;
+  top: -100px;
+  left: 1px;
+  font-size: 20pt
+}
+/*form data notificaçao*/
+#form #data_noti {
+  position: relative;
+  top: -100px;
+  left: 1px;
+  font-size: 12pt;
+}
+/*form sintomas txt*/
+#form #sintomas_txt {
+  position: relative;
+  top: -92px;
+  left: 20px;
+  font-size: 20pt
+}
+#form #sintomas {
+  position: relative;
+  top: -92px;
+  left: 20px;
+  font-size: 12pt;
+}
+/*rodape*/
+#rodape {
+  background: rgb(51,51,51);
+  background: linear-gradient(90deg, rgba(51,51,51,1) 0%, rgba(68,68,68,1) 50%, rgba(51,51,51,1) 100%);
+  width:100%;
+  height: 150px; 
+  position: relative;
+  top: -650px;
+  font-size: 20px;
+  color: white;
+}
+#rodape p {
+  position: relative;
+  top: 86px;
+  left: 800px;
+}
+#rodape i {
+  color: white;
+} 
+#rodape #copyright {
+  text-align: right;
+  position: relative;
+  top: 42px;
+  color: white;
+  left: -12px;
+}
+#rodape #img_link_ifrs {
+  position: relative;
+  top: -80px;
+  left: 10px;
+
+}
+#rodape #titulo_if_link a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  top: -150px;
+  left: 100px;
+  font-size: 40px;
+}
+/*botao enviar*/
+.button {
+  background-color: #2196F3;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  top: -132px;
+  position: relative;
+}
+/* 1º */
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 74px;
+  left: 1162px;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+/* 2º */
+/* Customize the label (the container) */
+.container_2 {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container_2 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark_2 {
+  position: absolute;
+  top: 32px;
+  left: 1025px;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container_2:hover input ~ .checkmark_2 {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container_2 input:checked ~ .checkmark_2 {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark_2:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container_2 input:checked ~ .checkmark_2:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container_2 .checkmark_2:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+/*Custom Select*/
+/*the container must be positioned relative:*/  
+.custom-select {
+  position: relative;
+  font-family: Arial;
+  top: 10px;
+  left: -500px; 
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: DodgerBlue;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 0px;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  border-radius: 0px;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#gif1 {
+  position: relative;
+  top: -310px;
+  left: 50px;
+  width: 200px;
+}
+
+#gif2 {
+  position: relative;
+  top: -810px;
+  left: 1500px;
+  width: 200px;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos Informativos</title>
+    <!--link css-->
+    <link rel="stylesheet" type="text/css" href="../css/mais_infos.css">
+    <!--link icones-->
+    <script src="https://kit.fontawesome.com/4b4300d5e9.js" crossorigin="anonymous"></script>
+    <!--icone-->
+    <link rel="icon" href="../img/foto ilustrativa.png">
+    <!--link fontes-->
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <!--Barra d menu-->
+    <div id="barra_do_menu">
+        <h1>Atlas Covid-19</h1>
+        <img class="emcasa" src="../img/em-casa-instagram-edit.png" alt="em_casa_instagram">
+        <div id="icone_virus">
+            <img src="../img/foto ilustrativa.png" alt="foto_ilustrativa">
+        </div>
+    </div>
+    <!--menu-->
+    <div id="menu">
+        <ul>
+            <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="inserção de dados.html"><i class="far fa-file-alt"></i> inserção de dados</li></a>
+            <li><a href="mais infos.html"><i class="fas fa-video"></i> Videos Informativos</li></a>
+            <li><a href="faq.html"><i class="fas fa-question-circle"></i> Perguntas e Respostas</li></a>
+        </ul>
+    </div>
+    <!-- Titulo destaque -->
+    <h2 id="titulodestaque">Videos Informativos</h2>
+    <!-- Videos -->
+    <div id="videos">
+        <div class="mySlides fade">
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/0SNw_uyurCo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="mySlides fade">
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/KOXNBA9b86I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        </div>
+    </div>
+    <!-- botoes -->
+    <div id="btn1">
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    </div>
+    <div id="btn2">
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <!-- muda os videos ao clicar -->
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script> 
+        <!--rodape-->
+    <div id="rodape">
+        <footer>
+            <p>Informaçoes adicionais acesse: <a href="https://g.co/kgs/hpmAk3"></a><i class="fab fa-google"></i></a>
+            ou nos envie um Email: <a href="mailto:informacoessobreocovid19.org@gmail.com"><i class="fas fa-envelope"></i></a></p>
+            <p id="copyright">Dev By Eric</p>
+        <div id="img_link_ifrs">
+            <a href="https://ifrs.edu.br/veranopolis/"><img src="../img/if.png" alt="logo_if_rs"></a>
+        </div>
+        <div id="titulo_if_link">
+            <a href="https://ifrs.edu.br/veranopolis/">Campus Veranópolis</a>
+        </div>
+        </footer>   
+</body>
+</html>
